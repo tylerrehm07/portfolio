@@ -35,12 +35,6 @@
                 position: relative;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
             .content {
                 text-align: center;
             }
@@ -66,26 +60,21 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Tyler Rehm
                 </div>
 
                 <div class="links">
                     <a href="/katas/fizz_buzz">Fizz Buzz</a>
                     <a href="/katas/info">Php Info</a>
                     <a href="/katas/debug">Debug</a>
+                </div>
+
+                <div class="links">
+                    <a href="https://github.com/tylerrehm07/portfolio">Github</a>
+                    <a href="https://www.linkedin.com/in/tylerrehm/">LinkedIn</a>
                 </div>
             </div>
         </div>

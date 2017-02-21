@@ -36,4 +36,6 @@
     @else
         <strong class="error">Caught exception:  {{ $databases }}</strong>
     @endif
+
+    @include('partials.salutation')
 @endsection
