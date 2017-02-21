@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KatasController extends Controller
 {
@@ -35,5 +36,17 @@ class KatasController extends Controller
     public function info(Request $request)
     {
         phpinfo();
+    }
+
+    public function debug(Request $request)
+    {
+        try {
+            $databases = DB::select('SHOW DATABASES;');
+        }
+        catch (Exception $e) {
+            $databases = $e->getMessage();
+        }
+
+        return view('katas.debug')->with('databases', $databases);
     }
 }

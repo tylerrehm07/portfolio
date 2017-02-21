@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/katas/fizz_buzz', 'KatasController@fizz_buzz');
 Route::get('/katas/info', 'KatasController@info');
+
+Route::get('/katas/debug', 'KatasController@debug');
