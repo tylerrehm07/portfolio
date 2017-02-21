@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/katas/fizz_buzz', 'KatasController@fizz_buzz');
