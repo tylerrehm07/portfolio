@@ -31,4 +31,9 @@ class KatasController extends Controller
 
         return view('katas.fizz_buzz')->with('results', $res);
     }
+
+    public function info(Request $request)
+    {
+        phpinfo();
+    }
 }

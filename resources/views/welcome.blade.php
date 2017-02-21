@@ -84,6 +84,7 @@
 
                 <div class="links">
                     <a href="/katas/fizz_buzz">Fizz Buzz</a>
+                    <a href="/katas/info">Php Info</a>
                 </div>
             </div>
         </div>
