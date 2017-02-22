@@ -6,7 +6,6 @@
 
 @section('content')
     <div class="flex-center position-ref full-height">
-
         <div class="content">
 
             <div class="title m-b-md">
@@ -17,15 +16,13 @@
                 <a href="/katas/fizz_buzz">Fizz Buzz</a>
                 <a href="/katas/info">Php Info</a>
                 <a href="/katas/debug">Debug</a>
+                <a href="/twilio">Twilio</a>
             </div>
 
             <div class="links">
                 <a href="https://github.com/tylerrehm07/portfolio">Github</a>
                 <a href="https://www.linkedin.com/in/tylerrehm/">LinkedIn</a>
-            </div>
-
-            <div class="links">
-                <a href="/twilio">Twilio</a>
+                <a href="/sites">Sites</a>
             </div>
         </div>
     </div>
