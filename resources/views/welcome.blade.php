@@ -8,6 +8,9 @@
     <div class="flex-center position-ref full-height">
 
         <div class="content">
+
+            @include('flash::message')
+
             <div class="title m-b-md">
                 Tyler Rehm
             </div>
@@ -22,7 +25,17 @@
                 <a href="https://github.com/tylerrehm07/portfolio">Github</a>
                 <a href="https://www.linkedin.com/in/tylerrehm/">LinkedIn</a>
             </div>
+
+            <div class="links">
+                <a href="/twilio">Twilio</a>
+            </div>
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
 @endsection
 

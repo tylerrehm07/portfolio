@@ -17,5 +17,8 @@ Route::get('/', function () {
 
 Route::get('/katas/fizz_buzz', 'KatasController@fizz_buzz');
 Route::get('/katas/info', 'KatasController@info');
-
 Route::get('/katas/debug', 'KatasController@debug');
+
+Route::get('/twilio', 'TwilioController@index');
+Route::post('/twilio/add', 'TwilioController@add');
+Route::match(array('GET', 'POST'),'/twilio/outbound/{id}', 'TwilioController@outbound');
