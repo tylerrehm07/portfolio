@@ -35,7 +35,7 @@ class KatasController extends Controller
 
     public function info(Request $request)
     {
-        phpinfo();
+        return view('katas.info');
     }
 
     public function debug(Request $request)

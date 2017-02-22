@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/me', function () {
+    return view('me');
+});
+
 Route::get('/katas/fizz_buzz', 'KatasController@fizz_buzz');
 Route::get('/katas/info', 'KatasController@info');
 Route::get('/katas/debug', 'KatasController@debug');

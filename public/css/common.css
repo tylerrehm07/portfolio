@@ -1,0 +1,11 @@
+.quick-links{
+    text-align: right;
+    padding-top:10px;
+    padding-right:15px;
+    font-size:1.3em;
+}
+
+.quick-links a {
+    padding-left:2px;
+    padding-right:2px;
+}

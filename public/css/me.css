@@ -1,0 +1,92 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.objective{
+    width:45%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left:25%;
+}
+
+.experience{
+
+}
+
+.company{
+
+}
+
+.degree{
+
+}
+
+.school{
+    font-weight:bold;
+    padding-left:7px;
+    padding-bottom:10px;
+}
+
+.position{
+    font-weight:bold;
+}
+
+.responsibilities{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.details{
+    width:45%;
+    margin-left:25%;
+    text-align: left;
+    padding-bottom:25px;
+}
+
+.section{
+    padding-bottom:15px;
+}
+
+.awards{
+
+}
+
+.spacer{
+    padding-top:15px
+}

@@ -9,8 +9,6 @@
 
         <div class="content">
 
-            @include('flash::message')
-
             <div class="title m-b-md">
                 Tyler Rehm
             </div>

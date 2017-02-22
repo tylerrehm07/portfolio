@@ -1,41 +1,43 @@
 @extends('layouts.master')
 
 @section('styles')
-    <style>
-        .confirmed{
-            background-color:green;
-            padding:5px;
-        }
-        .error{
-            background-color:crimson;
-            padding:5px;
-        }
-    </style>
+    <link href="/css/katas/debug.css" rel="stylesheet" type="text/css">
 @endsection
 
 @section('content')
-    <h1>Environment</h1>
-    {{ env('APP_ENV') }}
+    <div class="content">
+        <div class="title m-b-md">
+            Debug Information
+        </div>
 
-    <h1>Debugging?</h1>
-    {{ (!empty(env('APP_DEBUG'))) ? 'Yes' : 'No' }}
+        <h3>Environment</h3>
+        {{ env('APP_ENV') }}
 
-    <h1>Test Database Connection</h1>
-    @if(is_array($databases))
-        <strong class="confirmed">Connection confirmed</strong>
-        <br><br>Your Databases:<br><br>
-        <table>
-        @foreach($databases as $database)
-            <tr>
-                <td>
-                    {{ $database->Database }}
-                </td>
-            </tr>
-        @endforeach
-        </table>
-    @else
-        <strong class="error">Caught exception:  {{ $databases }}</strong>
-    @endif
+        <h3>Debugging?</h3>
+        {{ (!empty(env('APP_DEBUG'))) ? 'Yes' : 'No' }}
 
-    @include('partials.salutation')
+        <h3>Test Database Connection</h3>
+        @if(is_array($databases))
+            <strong class="confirmed">Connection confirmed</strong>
+            <br/>
+            <div align="center">
+                <h3>Your Databases:</h3>
+                <table class="table databases">
+                    @foreach($databases as $database)
+                        <tr>
+                            <td>
+                                {{ $database->Database }}
+                            </td>
+                        </tr>
+                    @endforeach
+                </table>
+            </div>
+        @else
+            <strong class="error">Caught exception:  {{ $databases }}</strong>
+        @endif
+
+        @include('partials.salutation')
+
+    </div>
 @endsection
+
