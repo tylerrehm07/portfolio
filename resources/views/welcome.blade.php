@@ -22,6 +22,7 @@
             <div class="links">
                 <a href="https://github.com/tylerrehm07/portfolio">Github</a>
                 <a href="https://www.linkedin.com/in/tylerrehm/">LinkedIn</a>
+                <a href="http://stackoverflow.com/story/tylerrehm">StackOverflow</a>
                 <a href="/sites">Sites</a>
             </div>
         </div>
