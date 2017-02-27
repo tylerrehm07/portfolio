@@ -49,4 +49,9 @@ class KatasController extends Controller
 
         return view('katas.debug')->with('databases', $databases);
     }
+
+    public function pig_latin(Request $request)
+    {
+        return view('katas.pig_latin');
+    }
 }

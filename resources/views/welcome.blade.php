@@ -17,6 +17,7 @@
                 <a href="/katas/info">Php Info</a>
                 <a href="/katas/debug">Debug</a>
                 <a href="/twilio">Twilio</a>
+                <a href="/katas/pig_latin">Pig Latin</a>
             </div>
 
             <div class="links">
